@@ -1,0 +1,41 @@
+.image-hover-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-hover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 135, 84, 0.85); /* Green with 30% opacity */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.image-hover-wrapper:hover .overlay-color {
+  opacity: 1;
+}
+
+.overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-hover-wrapper:hover .overlay-icon {
+  opacity: 1;
+}
