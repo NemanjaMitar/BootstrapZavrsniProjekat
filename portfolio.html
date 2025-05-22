@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- For some Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Portfolio</title>
@@ -14,7 +15,7 @@
 <body class="text-light">
 
     <!-- HEADER OF THE PAGE -->
-    <div class="bg-secondary">
+    <div class="bg-secondary fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary px-4 container">
             <a class="navbar-brand text-light" href="#">NEMANJA MITROVIC</a>
             <button class="navbar-toggler bg-success text-light" type="button" data-bs-toggle="collapse"
@@ -26,23 +27,23 @@
             <div class="collapse navbar-collapse justify-content-end" id="linkovi">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-light border border-warning" href="page1.html">PORTFOLIO</a>
+                        <a class="nav-link text-light" href="#portfolio">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="page2.html">ABOUT</a>
+                        <a class="nav-link text-light" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="page3.html">CONTACT</a>
+                        <a class="nav-link text-light" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <!-- Portfolio Image and short points, also that annoying star shit -->
-    <div class="bg-success">
-        <div class="container border border-danger p-4">
+    <div class="bg-success p-5">
+        <div class="container  p-4">
             <div class="d-flex flex-column align-items-center justify-content-center text-light">
-                <img class="w-25 h-60" src="img/avataaars.svg" alt="">
+                <img class="w-sm-50 w-lg-25 h-60" src="img/avataaars.svg" alt="">
                 <h1 class="mt-3 mb-3">NEMANJA MITROVIC</h1>
 
                 <div class="d-flex align-items-center justify-content-center" style="width: 100%;">
@@ -52,9 +53,9 @@
                 </div>
 
                 <div class="row fw-bold w-100 text-center">
-                    <div class="col-4 border border-danger py-2">FRONTEND DEVELOPER</div>
-                    <div class="col-4 border border-danger py-2">WEB DESIGNER</div>
-                    <div class="col-4 border border-danger py-2">SCRUM MASTER</div>
+                    <div class="col-4  py-2">FRONTEND DEVELOPER</div>
+                    <div class="col-4  py-2">WEB DESIGNER</div>
+                    <div class="col-4  py-2">SCRUM MASTER</div>
                 </div>
             </div>
         </div>
@@ -63,15 +64,121 @@
     <!-- Portfolio images-->
     <!-- Modal for image 1 -->
     <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-dark">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-light">
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+                </div>
+                <!-- BODY -->
                 <div class="modal-body text-center p-0">
-                    <img src="img/image1.jpg" class="img-fluid rounded" alt="Large view">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-secondary">
+                        <h1 class="mt-3 mb-3">C#</h1>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width: 100%;">
+                        <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+                        <i class="bi bi-star-fill fs-3 text-secondary"></i>
+                        <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+                    </div>
+                    <br>
+                    <img src="img/image1.jpg" class="w-50" alt="Large view">
+                    <p class="p-3 text-dark">
+                        C# is widely used for developing desktop applications, web applications and web services. It is
+                        used in creating applications of Microsoft at a large scale. C# is also used in game development
+                        in Unity.
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-light d-flex align-items-center bg-success text-light gap-2"
+                        data-bs-dismiss="modal" aria-label="Close">
+                        <span class="fw-bold">&times;</span> <!-- X icon -->
+                        <span>Close Window</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container border border-primary text-success">
+
+    <!-- Modal for image 2 -->
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-light">
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+                </div>
+                <!-- BODY -->
+                <div class="modal-body text-center p-0">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-secondary">
+                        <h1 class="mt-3 mb-3">HTML</h1>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width: 100%;">
+                        <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+                        <i class="bi bi-star-fill fs-3 text-secondary"></i>
+                        <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+                    </div>
+                    <br>
+                    <img src="img/image2.jpg" class="w-50" alt="Large view">
+                    <p class="p-3 text-dark">
+                        Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be
+                        displayed in a web browser. It defines the content and structure of web content. It is often
+                        assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as
+                        JavaScript, a programming language.
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-light d-flex align-items-center bg-success text-light gap-2"
+                        data-bs-dismiss="modal" aria-label="Close">
+                        <span class="fw-bold">&times;</span> <!-- X icon -->
+                        <span>Close Window</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Modal for image 3 -->
+    <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-light">
+                <!-- Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
+                </div>
+                <!-- BODY -->
+                <div class="modal-body text-center p-0">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-secondary">
+                        <h1 class="mt-3 mb-3">CSS</h1>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="width: 100%;">
+                        <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+                        <i class="bi bi-star-fill fs-3 text-secondary"></i>
+                        <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+                    </div>
+                    <br>
+                    <img src="img/image3.jpg" class="w-50" alt="Large view">
+                    <p class="p-3 text-dark">
+                        Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and
+                        styling of a document written in a markup language such as HTML or XML (including XML dialects
+                        such as SVG, MathML or XHTML).[2] CSS is a cornerstone technology of the World Wide Web,
+                        alongside HTML and JavaScript.[3]
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-light d-flex align-items-center bg-success text-light gap-2"
+                        data-bs-dismiss="modal" aria-label="Close">
+                        <span class="fw-bold">&times;</span> <!-- X icon -->
+                        <span>Close Window</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container  text-success p-5">
         <div class="row justify-content-center align-items-center">
             <div class="d-flex flex-column align-items-center justify-content-center text-secondary">
                 <h1 class="mt-3 mb-3">PORTFOLIO</h1>
@@ -94,7 +201,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6  p-4">
-                <div class="image-hover-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                <div class="image-hover-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal2">
                     <img src="img/image2.jpg" alt="image2" class="img-fluid m-1 rounded image-hover">
                     <div class="overlay-color rounded"></div> <!-- Green overlay -->
                     <div class="overlay-icon">
@@ -103,7 +210,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 p-4">
-                <div class="image-hover-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                <div class="image-hover-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal3">
                     <img src="img/image3.jpg" alt="image3" class="img-fluid m-1 rounded image-hover">
                     <div class="overlay-color rounded"></div> <!-- Green overlay -->
                     <div class="overlay-icon">
@@ -129,7 +236,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6  border border-danger p-4">
+            <div class="col-lg-4 col-md-6 col-sm-6  p-4">
                 <div class="image-hover-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal1">
                     <img src="img/image6.jpg" alt="image6" class="img-fluid m-1 rounded image-hover">
                     <div class="overlay-color rounded"></div> <!-- Green overlay -->
@@ -138,11 +245,138 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
+    <!-- ABOUT ME PART -->
+    <div id="about" class="bg-success p-5">
+        <div class="container ">
+            <div class="d-flex flex-column align-items-center justify-content-center text-light">
+                <h1 class="mt-3 mb-3">ABOUT</h1>
+
+                <div class="d-flex align-items-center justify-content-center" style="width: 100%;">
+                    <hr style="height: 3px; background-color: white; border: none; width: 120px; margin: 0 10px;">
+                    <i class="bi bi-star-fill fs-3 text-white"></i>
+                    <hr style="height: 3px; background-color: white; border: none; width: 120px; margin: 0 10px;">
+                </div>
+                <br>
+                <div class="row w-100 text-wrap align-left text-start lh-lg">
+
+                    <div class="col-lg-6 col-sm-12">
+                        <p>Front-end web development, also known as client-side development is the practice of producing
+                            HTML, CSS and JavaScript for a website or Web Application so that a user can see and
+                            interact with them directly. The challenge associated with front end development is that the
+                            tools and techniques used to create the front end of a website change constantly and so the
+                            developer needs to constantly be aware of how the field is developing.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p>The objective of designing a site is to ensure that when the users open up the site they see
+                            the information in a format that is easy to read and relevant. This is further complicated
+                            by the fact that users now use a large variety of devices with varying screen sizes and
+                            resolutions thus forcing the designer to take into consideration these aspects when
+                            designing the site. They need to ensure that their site comes up correctly in different
+                            browsers...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--CONTACT ME FORM -->
+    <div class="container  text-success p-5" id="contact">
+        <div class="row justify-content-center align-items-center">
+            <div class="d-flex flex-column align-items-center justify-content-center text-secondary">
+                <h1 class="mt-3 mb-3">CONTACT ME</h1>
+            </div>
+            <div class="d-flex align-items-center justify-content-center" style="width: 100%;">
+                <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+                <i class="bi bi-star-fill fs-3 text-secondary"></i>
+                <hr style="height: 3px; background-color: gray; border: none; width: 120px; margin: 0 10px;">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6">
+                        <br>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="fullName" placeholder="Full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="emailAddress" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" id="phoneNumber" placeholder="Phone number"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="messageBox" rows="5" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-lg p-3 btn-success text-light justify-content-end">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- junky-ass footer b4 footer -->
+    <div class="container-fluid bg-secondary text-light">
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-lg-4  p-3  d-flex flex-column justify-content-center align-items-center col-sm-12">
+
+                    <h2>LOCATION</h2>
+                    <p>SMARTINIT Novi Sad, Serbia</p>
+                </div>
+                <div class="col-lg-4  p-3  d-flex flex-column align-items-center col-sm-12">
+                    <h2>AROUND THE WEB</h2>
+                    <div class="row">
+
+                        <div class="col-3   d-flex flex-column justify-content-center align-items-center">
+                            <a href="https://www.instagram.com" class="btn btn-outline-light" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-3   d-flex flex-column justify-content-center align-items-center">
+                            <a href="https://www.facebook.com" class="btn btn-outline-light" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="col-3   d-flex flex-column justify-content-center align-items-center">
+                            <a href="https://www.linkedin.com" class="btn btn-outline-light" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                       <div class="col-3   d-flex flex-column justify-content-center align-items-center">
+                            <a href="https://www.yourwebsite.com" class="btn btn-outline-light" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3  d-flex flex-column justify-content-center align-items-center col-sm-12">
+
+                    <h2>ABOUT SMARTINIT</h2>
+                    <p>PanonIT Code Academy -> <a href="#">Start Course</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-light py-2 bg-dark" style="border-top: 1px solid #222; color: #333;">
+        Copyright © 2025 Nemanja Mitrovic. All rights reserved.
+    </footer>
+    
     <!-- Bootstrap 5 JS (optional for navbar toggler functionality) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
