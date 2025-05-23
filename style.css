@@ -1,8 +1,29 @@
 .image-hover-wrapper {
-  position: relative;
-  overflow: hidden;
+  position: relative; /* Ensure parent is positioned */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* clips anything out of bounds */
   cursor: pointer;
 }
+.image-hover-wrapper:hover {
+  transform: scale(0.97);
+  box-shadow: 0 0 20px rgba(25, 135, 84, 0.5); /* subtle green glow */
+}
+
+
+.overlay-text {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);  /* Shift left by half of own width */
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 3; /* higher than icon and overlay */
+  pointer-events: none; /* so text doesn’t block clicks */
+  user-select: none; /* optional, avoid text selection */
+}
+
+
 
 .image-hover {
   display: block;
@@ -42,6 +63,7 @@
 }
 
 
+
 input:focus,
 textarea:focus {
   border-color: #00ff37 !important;
@@ -69,3 +91,14 @@ textarea:focus {
 a:hover, .nav-link:hover {
   color: #36c582 !important;
 }
+
+ .icon-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #198754; /* Bootstrap success color */
+    }
